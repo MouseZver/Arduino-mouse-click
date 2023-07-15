@@ -21,8 +21,14 @@ class Mouse
 		
 	private $serial;
 	
-	public function __construct ( int $com )
+	public function __construct ( 
+		int $com, int $baud = 9600, string $parity = 'n', int $data = 8, int $stop = 1, 
+		string $to = 'off', string $xon = 'off', string $odsr = 'off', 
+		string $octs = 'off', string $dtr = 'on', string $rts = 'on', string $idsr = 'off'
+	)
 	{
+		shell_exec ( "mode com{$com}: baud={$baud} parity={$parity} data={$data} stop={$stop} to={$to} xon={$xon} odsr={$odsr} octs={$octs} dtr={$dtr} rts={$rts} idsr={$idsr}" );
+		
 		$this -> serial = fopen ( 'COM' . $com, 'w' );
 		
 		if ( is_bool ( $this -> serial ) )
