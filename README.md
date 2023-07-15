@@ -4,6 +4,8 @@
 [![License](https://poser.pugx.org/nouvu/arduino-mouse-click/license)](https://packagist.org/packages/nouvu/arduino-mouse-click)
 [![Foo](https://img.shields.io/badge/README-ENGLISH-blueviolet.svg?style=flat-square)](https://github-com.translate.goog/MouseZver/Arduino-mouse-click?_x_tr_sl=ru&_x_tr_tl=en)
 
+Подключение:
+
 > composer require nouvu/arduino-mouse-click
 
 Библиотека для реализации физического нажатия кнопок R и L мыши с помощью Arduino Nano v3 контроллера.
