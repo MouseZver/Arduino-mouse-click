@@ -34,7 +34,7 @@ PHP код:
 
 ```php
 // port COM4
-$mouse = new Nouvu\ArduinoNanoV3\Mouse( 4 );
+$mouse = new Nouvu\ArduinoNanoV3\Mouse( 1 );
 
 // loop R button click
 while ( true )
