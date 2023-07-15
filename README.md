@@ -23,12 +23,14 @@ Arduino NANO не поддерживает нативно.
 
 > Arduino NANO V3.0 Atmega328 CH340 (пины припаяны)
 
--   Далее прошить контроллер [скетчем](https://github.com/MouseZver/Arduino-mouse-click/blob/master/ArduinoSketch/Mouse.ino)
+-   Далее прошить контроллер [скетчем](https://github.com/MouseZver/Arduino-mouse-click/blob/master/ArduinoSketch/mouse.ino)
 -   Прикрепить два провода к клик кнопкам на плате мыши, пример схемы:
 
 ![Image alt](https://github.com/MouseZver/Arduino-mouse-click/blob/master/ArduinoSketch/mouse.drawio.png)
 
 ---
+
+PHP код:
 
 ```php
 // port COM4
