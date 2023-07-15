@@ -1,0 +1,17 @@
+{
+    "name": "nouvu/arduino-mouse-click",
+    "type": "library",
+	"homepage": "https://github.com/MouseZver/Arduino-mouse-click",
+    "require": {
+        "php": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MouseZver"
+        }
+    ],
+	 "autoload": {
+        "files": [ "Mouse.php" ]
+    }
+}
