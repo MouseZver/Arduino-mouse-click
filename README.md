@@ -1,7 +1,7 @@
 # Arduino-mouse-click
 
-[![Latest Unstable Version](https://poser.pugx.org/Nouvu/arduino-mouse-click/v)](https://packagist.org/packages/nouvu/arduino-mouse-click)
-[![License](https://poser.pugx.org/nouvu/arduino-mouse-click/license)](https://packagist.org/packages/nouvu/arduino-mouse-click)
+[![Latest Unstable Version](https://poser.pugx.org/Nouvu/Arduino-mouse-click/v)](https://packagist.org/packages/nouvu/Arduino-mouse-click)
+[![License](https://poser.pugx.org/nouvu/Arduino-mouse-click/license)](https://packagist.org/packages/nouvu/Arduino-mouse-click)
 [![Foo](https://img.shields.io/badge/README-ENGLISH-blueviolet.svg?style=flat-square)](https://github-com.translate.goog/MouseZver/Arduino-mouse-click?_x_tr_sl=ru&_x_tr_tl=en)
 
 Подключение:
