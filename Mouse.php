@@ -36,6 +36,8 @@ class Mouse
 			return;
 		}
 		
+		sleep ( 2 );
+		
 		register_shutdown_function ( function ()
 		{
 			$this -> close();
