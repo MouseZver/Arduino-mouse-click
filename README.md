@@ -33,7 +33,7 @@ Arduino NANO не поддерживает нативно.
 PHP код:
 
 ```php
-// port COM4
+// port COM1
 $mouse = new Nouvu\ArduinoNanoV3\Mouse( 1 );
 
 // loop R button click
