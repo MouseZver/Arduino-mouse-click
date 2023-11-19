@@ -1,0 +1,11 @@
+<?php
+
+declare ( strict_types = 1 );
+
+require 'Mouse.php';
+
+$mouse = new \Nouvu\ArduinoNanoV3\Mouse( 6 );
+
+$mouse -> leftClick();
+$mouse -> leftClick();
+$mouse -> rightClick();

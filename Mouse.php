@@ -9,17 +9,19 @@ use Error;
 class Mouse
 {
 	private const
-		MOUSE_BUTTON_LEFT_CLICK = 'L',
-		MOUSE_BUTTON_RIGHT_CLICK = 'R',
-		MOUSE_BUTTON_LEFT_DOWN = 2,
-		MOUSE_BUTTON_RIGHT_DOWN = 4,
-		MOUSE_BUTTON_LEFT_UP = 1,
-		MOUSE_BUTTON_RIGHT_UP = 3,
-		MOUSE_BUTTONS_RESET = 0;
+		MOUSE_BUTTON_LEFT_CLICK = 'command:mouse:click:left',
+		MOUSE_BUTTON_RIGHT_CLICK = 'command:mouse:click:right',
+		MOUSE_BUTTON_LEFT_DOWN = 'command:mouse:press:left',
+		MOUSE_BUTTON_RIGHT_DOWN = 'command:mouse:press:right',
+		MOUSE_BUTTON_LEFT_UP = 'command:mouse:releaseAll:left',
+		MOUSE_BUTTON_RIGHT_UP = 'command:mouse:releaseAll:right',
+		MOUSE_BUTTONS_RESET = 'command:mouse:releaseAll:0';
 	
 	private const DELAY_CLICK = 50000;
 		
 	private $serial;
+	
+	private string $suffix = "\n";
 	
 	public function __construct ( 
 		int $com, int $baud = 9600, string $parity = 'n', int $data = 8, int $stop = 1, 
@@ -42,6 +44,8 @@ class Mouse
 		{
 			$this -> close();
 		} );
+		
+		$this -> send( 'ea2b2676c28c0db26d39331a336c6b92' ); // start token
 	}
 	
 	public function leftClick( string | int $val = self :: MOUSE_BUTTON_LEFT_CLICK, int $microseconds = self :: DELAY_CLICK ): void
@@ -87,7 +91,7 @@ class Mouse
 	{
 		if ( is_resource ( $this -> serial ) )
 		{
-			fwrite ( $this -> serial, ( string ) $command );
+			fwrite ( $this -> serial, $command . $this -> suffix );
 			
 			return;
 		}
