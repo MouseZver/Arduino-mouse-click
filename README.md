@@ -4,6 +4,8 @@
 [![License](https://poser.pugx.org/nouvu/Arduino-mouse-click/license)](https://packagist.org/packages/nouvu/Arduino-mouse-click)
 [![Foo](https://img.shields.io/badge/README-ENGLISH-blueviolet.svg?style=flat-square)](https://github-com.translate.goog/MouseZver/Arduino-mouse-click?_x_tr_sl=ru&_x_tr_tl=en)
 
+Новая версия: [USB HID](https://github.com/MouseZver/Arduino-hid)
+
 Подключение:
 
 > composer require nouvu/arduino-mouse-click
